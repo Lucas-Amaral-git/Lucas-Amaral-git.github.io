@@ -1,0 +1,109 @@
+body{
+    margin:0;
+}
+h1{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+/* header */
+header{
+    position: relative;
+    left:0;
+    top:0;
+    background-image: linear-gradient(to bottom right, rgb(4, 3, 36) ,rgb(22, 20, 120));
+    color: rgb(31, 162, 223);
+    width: 100vw;
+    min-height:200px;
+}
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left:10%;
+    top: 50px;
+    margin: 0;
+}
+header #apresentacao{
+    position: relative;
+    width: 10%;
+    left:0;
+    text-align: center;
+    padding: 40px 30px;
+}
+header #apresentacao img{
+    border: 3px solid #444;
+}
+header #apresentacao p{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size:20px;
+}
+nav{
+    position: absolute;
+    left: 25%;
+    top:40%;
+    width: auto;
+    height: auto;
+    background-color: rgb(12, 10, 112);
+    border-radius: 10%;
+}
+nav ul{
+    list-style-type: none;
+    padding-left:0;
+    padding: 0 10px;
+}
+nav li{
+    display: inline;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:visited{
+    color: rgb(31, 162, 223);
+}
+nav li:hover, nav li:hover a{
+    color: #EEE;
+    background-color: rgb(5, 4, 65);
+
+    cursor: pointer;
+}
+nav > ul > li{
+    position:static;
+    padding: 8px 5px;
+}
+nav > ul > li:hover{
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+    position:static;
+}
+    /* dropdown header */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color:rgb(5, 4, 65);
+    padding: 9px 12px;
+    z-index: 1;
+}
+.dropdown:hover + ul.dropdown-content {
+    display: block;
+}
+ul.dropdown-content:hover{
+    display:block;
+}
+
+/* main */
+main{
+    position:static;
+    width: 70%;
+    margin: 5% auto;
+}
+main h1{
+    text-indent: 100px;
+}
+main p{
+    text-indent: 40px;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
