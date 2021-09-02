@@ -55,10 +55,10 @@ nav li{
 nav a{
     text-decoration: none;
 }
-nav a:visited{
+nav a:visited, nav a:link{
     color: rgb(31, 162, 223);
 }
-nav li:hover, nav li:hover a{
+nav li:hover, nav a:hover{
     color: #EEE;
     background-color: rgb(5, 4, 65);
 
@@ -66,27 +66,27 @@ nav li:hover, nav li:hover a{
 }
 nav > ul > li{
     position:static;
-    padding: 8px 5px;
-}
-nav > ul > li:hover{
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
-    position:static;
+    padding: 8px 0px;
+    text-align: center;
 }
     /* dropdown header */
 .dropdown {
+    min-width: 160px;
     position: relative;
     display: inline-block;
 }
 .dropdown-content {
     display: none;
     position: absolute;
-    min-width: 140px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left:10%;
+    width: 80%;
+    margin: 8px auto;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     background-color:rgb(5, 4, 65);
-    padding: 9px 12px;
+    padding: 5px 0px;
     z-index: 1;
 }
-.dropdown:hover + ul.dropdown-content {
+.dropdown:hover ul.dropdown-content {
     display: block;
 }
 ul.dropdown-content:hover{
