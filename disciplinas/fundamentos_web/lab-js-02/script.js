@@ -232,12 +232,6 @@ window.onload = function(){
     addBotaoEvento("executar-q4", questao4);
     addBotaoEvento("executar-q5", questao5);
     addBotaoEvento("executar-q6", questao6);
-
-    $(".data-com-picker").datepicker({
-        dateFormat: "dd/mm/yy",
-        monthNames: nomesMeses
-    });
-
     addBotaoEvento("executar-q7", questao7);
     addBotaoEvento("executar-q8", questao8);
     addBotaoEvento("executar-q9", questao9);
