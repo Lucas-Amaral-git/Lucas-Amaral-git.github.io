@@ -139,16 +139,12 @@ var questao6 = () =>{
 
 var questao7 = () =>{
     var value = valorInput("texto-q7");
-    let data = value.split('/');
-    if(data.length != 3){
-        alert("Data em formato inválido");
-        return;
-    }
+    let data = value.split('-');
 
     var dataObj = new Date();
-    dataObj.setDate(data[0]);
+    dataObj.setDate(data[2]);
     dataObj.setMonth(data[1] - 1);
-    dataObj.setYear(data[2]);
+    dataObj.setYear(data[0]);
 
     var dataEmTexto = dataObj.getDate() + " de " + nomesMeses[dataObj.getMonth()] + " de " + dataObj.getFullYear();
 
