@@ -1,0 +1,215 @@
+/* ÍNICIO HEADER */
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header #topo{
+    background-color: #DD0303;
+    padding: 20px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+header h1{
+    margin-top: 25px;
+    font-size: 8em;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: #FFF;
+    /* text-shadow:
+                -1px -1px 0px #FFF,
+                -1px 1px 0px #FFF,
+                1px -1px 0px #FFF,
+                2px 1px 1px #FFF; */
+    margin-bottom: 25px;
+}
+header nav ul{
+    padding: 5px;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    border-top: 2px solid #f3f2ee;
+    border-bottom: 2px solid #f3f2ee;
+}
+header nav li{
+    display: inline;
+    padding-bottom: 50px;
+}
+header nav a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #FFF;
+}
+header a:hover{
+    color: #FFF;
+    background-color: #FF2222;
+}
+.pagina-atual{
+    color: #DD0303;
+    background-color: #f3f2ee;
+}
+
+/* PARTE RESPONSIVA */
+
+@media (max-width: 800px) {
+    header #topo{
+        padding: 20px 0;
+    }
+    header h1{
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    header ul{
+        width: 70% !important;
+        border-top: 5px solid #DAA520;
+    }
+    header nav li{
+        display: block;
+        margin: 3px;
+        padding-bottom: 12px;
+    }
+    header nav a{
+        padding: 2px 4px;
+    }
+
+    /*  SÉRIES  */
+    .bloco{
+        padding-top:25px;
+        padding-bottom: 30px;
+        width: 100%;
+        position: relative;
+        /* margin-top: 30px; */
+    }
+
+    .bloco figure{
+        width: 80%;
+        margin-left: 10%;
+        margin-top:0;
+    }
+    .bloco img{
+        height: 300px;
+        width: 100%;
+    }
+
+    .bloco div{
+        margin: 0 15px;
+        text-align: center;
+    }
+
+    .bloco div p{
+        margin:0;
+        padding: 8px 0;
+    }
+    /*  FIM SÉRIES  */
+}
+
+@media (max-width: 1151px) {
+    header nav a{
+        padding: 5px 10px;
+    }
+}
+
+.bloco{
+    width: 60%;
+    margin-left: 20%;
+    padding-bottom: 50px;
+}
+
+.bloco figure{
+    width: 50%;
+    margin-left: 25%;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+/* INICIO MAIN DAS PÁGINAS INICIAL, DA INICIATIVA VINGADORES E DO MULTIVERSO */
+
+main{
+    background-color: #EDEDEB;
+}
+
+.parent {
+    padding-top: 60px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.parent h2{
+    text-indent: 100px;
+}
+
+div {
+    text-align: justify;
+}
+
+div p{
+    text-indent: 50px;
+    padding: 20px 40px;
+    margin: 0;
+}
+
+img{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 3px;
+}
+
+.stan-lee{
+    width: 40%;
+    margin: 0 auto;
+}
+
+main ul{
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+main ul li{
+    list-style-type: none;
+}
+
+main ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+main ul li a:hover{
+    color: #FFF;
+    background-color: #fa0707b6;
+}
+
+
+/* FIM MAIN DAS PÁGINAS INICIAL, DA INICIATIVA VINGADORES E DO MULTIVERSO */
+
+/* INÍCIO MAIN DE FILMES E SÉRIES */
+
+.bloco h2{
+    /* margin-top: 20px; */
+    margin: 5px;
+    text-align: center;
+}
+
+.container{
+    padding-top: 60px;
+}
+
+.container p{
+    text-align: center;
+}
+
+/* FIM MAIN DE FILMES E SÉRIES */
+
+/* INICIO RODAPÉ */
+footer{
+    margin: 0;
+    position: relative;
+    clear: both;
+    background-color: #DD0303;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+}
+/* FIM RODAPÉ */
