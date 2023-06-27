@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/index.js" type="module"></script>
+
+    <title>Sorteio ADCP</title>
+</head>
+<body>
+    <h1>Sorteio da Conferência <span id="tema-titulo">Fogo Nos Ossos</span></h1>
+
+    <article id="exibicao-sorteio">
+
+        <img src="./images/gif-loading.gif" id="loading-numero">
+
+        <div id="solicitar-configuracao">
+            <h2>Configure o sorteio abaixo!!!</h2>
+        </div>
+
+        <div id="exibir-numero-sorteado">
+            <span id="numero-sorteado"></span>
+
+            <button id="sortear-numero">Sortear novo número</button>
+        </div>
+    </article>
+
+    <article id="configuracoes">
+        <h2>Configurações</h2>
+
+        <label for="limite-inferior">Limite inferior</label>
+        <input type="number" name="limite-inferior" id="limite-inferior" min="1" value="1" placeholder="Menor número a ser sorteado">
+
+        <label for="limite-superior">Limite superior</label>
+        <input type="number" name="limite-superior" id="limite-superior" min="1" value="100" placeholder="Maior número a ser sorteado">
+
+        <button id="configurar-sorteio">Configurar</button>
+    </article>
+
+    <article id="botoes-auxiliares">
+        <button id="novo-sorteio">Novo sorteio</button>
+
+        <button id="recomecar-sorteio">Recomeçar sorteio</button>
+    </article>
+
+    <aside id="ultimos-numeros-sorteados"></aside>
+
+</body>
+</html>

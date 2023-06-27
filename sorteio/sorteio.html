@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/index.js" type="module"></script>
+
+    <title>Sorteio ADCP</title>
+</head>
+<body>
+    <img src="./images/Background-Image.gif" id="imagem-fundo">
+    
+    <main class="components-container">
+        <div class="sorteio-container">
+
+            <section id="exibicao-sorteio">
+            
+                <div id="solicitar-configuracao"></div>
+                
+                    <div class="sorteio">
+                        <img src="./images/loading-otimization.gif" id="loading-numero">
+
+                        <div id="exibir-numero-sorteado">
+                            <div class="btn-sorteio">
+                                <a href="#" id="sortear-numero" class="botao-sorteio">
+                                    <span>Sorteio</span>
+                                    <div class="liquid"></div>
+                                </a>
+                            </div>
+                            <div>
+                                <section id="numero-sorteado"></section>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </section>
+
+            <section>
+                <div id="ultimos-numeros-sorteados"></div>
+            </section>
+
+            <section id="botoes-auxiliares">
+                <a id="novo-sorteio" class="btn-aux">
+                    <img src="/images/botao-retroceder.png" alt="">
+                </a>
+
+                <a id="recomecar-sorteio" class="btn-aux">
+                    <img src="/images/reiniciar.png" alt="">
+                </a>
+            </section> 
+        </div>
+
+        <section id="configuracoes">
+            <h2 class="titulo-configuracoes">Configurações</h2>
+            
+            <div class="limites">
+                <div class="inferior">
+                    <label for="limite-inferior" >Limite inferior</label>
+                    <input type="number" class="input-text" name="limite-inferior" id="limite-inferior" min="1" value="1" placeholder="Menor número a ser sorteado">
+                </div>
+                <div class="superior">
+                    <label for="limite-superior">Limite superior</label>
+                    <input type="number" class="input-text" name="limite-superior" id="limite-superior" min="1" value="100" placeholder="Maior número a ser sorteado">
+                </div>
+            </div>
+
+            <button id="configurar-sorteio">Configurar</button>
+        </section>
+    
+    </main>
+</body>
+</html>
