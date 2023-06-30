@@ -176,7 +176,7 @@ function informarUltimosNumerosSorteados( sorteio ){
         let ultimosElementos = sorteio.getNumerosSorteados().slice(-3);
         ultimosElementos = ultimosElementos.reverse();
 
-        document.getElementById("ultimos-numeros-sorteados").innerHTML = "<p> Últimos números sorteados: </p> <div>" + ultimosElementos.join(" - ") + "</div>";
+        document.getElementById("ultimos-numeros-sorteados").innerHTML = "<p> Últimos números sorteados </p> <div>" + ultimosElementos.join(" - ") + "</div>";
     }
 
     document.getElementById("ultimos-numeros-sorteados").style.display = 'block';

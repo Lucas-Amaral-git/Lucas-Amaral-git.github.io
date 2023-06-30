@@ -8,8 +8,13 @@
 }
 @font-face {
     font-family: grealn;
-    src: url("../fonts/GREALN__.ttf");
+    src: url("../fonts/Versailles\ LT\ Regular.ttf");
 }
+@font-face {
+    font-family: pearl;
+    src: url("../fonts/TAN-PEARL.ttf");
+}
+
 @font-face {
     font-family: BPdiet;
     src: url("../fonts/BPdiet.otf");
@@ -28,7 +33,6 @@ section#ultimos-numeros-sorteados {
     margin: 0;
     /* font-family: allrounder; */
     text-transform: uppercase;
-    font-weight: 600;
 }
 
 .components-container {
@@ -39,7 +43,7 @@ section#ultimos-numeros-sorteados {
     text-align: center;
     /* left: 350px; */
     top: 280px;
-    margin-right: 136px;
+    margin-right: 120px;
     position:relative;
     /* overflow-y: hidden; */
     /* gap: 250px; */
@@ -52,7 +56,7 @@ section#ultimos-numeros-sorteados {
     justify-content: center;
     /* align-items: center;
     color: white; */
-    gap: 30px;
+    gap: 20px;
 }
 
 #imagem-fundo{
@@ -72,11 +76,11 @@ section#ultimos-numeros-sorteados {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: BPdiet;
+    font-family: grealn;
 }
 #numero-sorteado div {
     color: #fff;
-    font-size: 72px;
+    font-size: 102px;
     font-weight: 600;
     background-color: orangered;
     padding: 30px;
@@ -93,30 +97,34 @@ section#exibicao-sorteio{
 
 #ultimos-numeros-sorteados p {
     margin: 0;
-    font-size: 26px;
-    background-color: #1F2334;
-    color: #C1BAFF;
-    padding: 15px;
-    border-radius: 40px;
+    font-size: 29px;
+    background-color: rgba(31, 35, 52, .5);
+    color: #D7CAFF;
+    padding: 10px;
+    border-radius: 40px; 
+    font-family: grealn;
 }
 #ultimos-numeros-sorteados div {
     color: #fff;
-    font-size: 52px;
+    font-size: 54px;
+    font-family: grealn;
+    margin-top: 18px;
     font-weight: 600;
-    margin-top: 20px;
-    font-family: BPdiet;
 }
 
 section#botoes-auxiliares {
     display: flex;
+    /* margin-top: 20px; */
 }
     
 #novo-sorteio {
     cursor: pointer;
-    margin-right:400px ;
+    margin-right:420px ;
+    
 }
 #recomecar-sorteio {
     cursor: pointer;
+    margin-left: 5px;
 }
 
 
@@ -166,7 +174,7 @@ section#botoes-auxiliares {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    width: 200px;
+    width: 150px;
     overflow: hidden;
     border-radius: 40px;
   }
@@ -174,8 +182,8 @@ section#botoes-auxiliares {
 .botao-sorteio span {
     position: relative;
     color: #fff;
-    font-size: 20px;
-    font-family: Arial;
+    font-size: 26px;
+    font-family: grealn;
     letter-spacing: 8px;
     z-index: 1;
   }
